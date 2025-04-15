@@ -1,0 +1,161 @@
+/* 🌌 Fond étoilé avec le même dégradé que message.php */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #0a0f2c, #1b1f3a);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* 📦 Conteneur principal */
+.container, .login-container {
+    width: 80%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2); /* Fond semi-transparent plus clair */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3); /* Effet lumineux */
+    text-align: center;
+    backdrop-filter: blur(10px); /* Flou pour effet moderne */
+    color: white;
+}
+
+/* 📜 Titres */
+h2, h3 {
+    color: #fff;
+}
+
+/* 📩 Formulaires */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left:-17px;
+        
+}
+
+.input-group label {
+    font-size:17px;
+    font-weight: 650;
+    color:white;
+}
+
+.input-group input, 
+.input-group textarea, 
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.3); /* Un fond plus clair mais semi-transparent */
+    color: white;
+    
+}
+
+/* 🎛️ Boutons */
+.btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn.danger {
+    background: #ff4d4d;
+}
+
+.btn.danger:hover {
+    background: #cc0000;
+}
+
+/* 📬 Liste des contacts */
+.contacts-section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contacts-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* 🔄 Formulaire Ajout Contact */
+.add-contact-section {
+    height: 100vh; /* Prendre toute la hauteur de la page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.add-contact-section h3 {
+    border-bottom: 2px solid #00c6ff;
+    padding-bottom: 5px;
+}
+
+.add-contact-section .btn:hover {
+    background: #0056b3;
+}
+.register-link{
+    font-size:18px;
+    color:white;
+    text-decoration:none;
+}
+
+
+/* 🎯 Message d'erreur */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    .container, .login-container {
+        width: 95%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-item .actions {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
