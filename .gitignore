@@ -1,0 +1,36 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# node
+node_modules/
+
+# Composer
+/vendor/
+
+# Env
+.env
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# MAMP config or cache files
+*.sql
+*.sqlite
+*.db
+
+# Others
+*.bak
+*.tmp
+*.swp
+
